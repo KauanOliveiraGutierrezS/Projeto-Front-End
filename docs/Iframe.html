@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- àrea não visual -->
+    <head>
+        <title>Iframe - Conteúdo Externo</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" Content="aulas de css,aulas de javascript, aulas de front end" />
+        <meta name="description" content="Venha fazer a formação FullStack" />
+        <link rel="stylesheet" href="../css/estilo.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- àrea de conteúdo -->
+    <body>
+        <header>
+            <p>São Paulo, 05 de Dezembro de 2024</p>
+            <div>
+                <img src="../imagens/logo.png" />
+            </div>
+        </header>
+        <nav>
+            <div class="hb"></div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="imagens.html">imagens</a></li>
+                <li><a href="tabelas.html">tabelas</a></li>
+                <li><a class="marcador">iframe</a></li>
+                <li><a href="javascript.html">javascript</a></li>
+                <li><a href="jquery.html">jquery</a></li>
+                <li><a href="bootstrap.html">bootstrap</a></li>
+                <li><a href="responsividade.html">responsividade</a></li>
+                <li><a href="localstorage.html">local storage</a></li>
+                <li><a href="animacao.html">animação</a></li>
+                
+                <li><a href="formularios.html">formulários</a></li>
+            </ul>
+        </nav>
+        <div id="conteudo">
+        <section>
+            <h1>Iframe - Conteúdo Externo</h1>
+            <article>
+                <h2>Inserindo uma Página de outro domínio</h2>
+
+                <iframe src="https://www.americanas.com.br/busca/iphone-16-pro-max" frameborder="0" scrolling="no" width="80%" height="600" class="mx-auto"></iframe>
+
+                <h2>Incorporando Media Externa (Video)</h2>
+                <div class="w-75 mx-auto">
+                <iframe width="80%" height="600" class="mx-auto" src="https://www.youtube.com/embed/ueYj6HmKr7A?si=RCK_NNKumCfpEmWi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <h2>Iframe Navegável</h2>
+                <div class="navNoticia w-75">
+                    <a target="noticias" href="../noticias/noticia01.html">Notícia 1</a>
+                    <a target="noticias" href="../noticias/noticia02.html">Notícia 2</a>
+                    <a target="noticias" href="../noticias/noticia03.html">Notícia 3</a>
+                    <a target="noticias" href="../noticias/noticia04.html">Notícia 4</a>
+                </div>
+
+                <div class="w-75 mx-auto">
+                    <iframe frameborder="0" scrooling="no" src="../noticias/noticia02.html" height="700" width="100%" name="noticias"></iframe>
+                </div>
+            </article>        
+        <article>
+            <h2>Texto Pré Formatado</h2>
+<pre>
+    "Deus não joga dados."
+            Albert Einstein__
+</pre>
+        </article>
+        </section>
+        </div>        
+        <footer>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>

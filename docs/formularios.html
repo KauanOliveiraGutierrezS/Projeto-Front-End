@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- àrea não visual -->
+    <head>
+        <title>formulários</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" Content="aulas de css,aulas de javascript, aulas de front end" />
+        <meta name="description" content="Venha fazer a formação FullStack" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <link rel="stylesheet" href="../css/estilo.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <!-- àrea de conteúdo -->
+    <body>
+        <header class="container-fluid">
+            <p>São Paulo, 05 de Dezembro de 2024</p>
+            <span id="semana"></span>
+            <div>
+                <img src="../imagens/logo.png" />
+            </div>
+        </header>
+        <nav>
+            <div class="hb"></div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="imagens.html">imagens</a></li>
+                <li><a href="tabelas.html">tabelas</a></li>
+                <li><a href="Iframe.html">iframe</a></li>
+                <li><a href="javascript.html">javascript</a></li>
+                <li><a href="jquery.html">jquery</a></li>
+                <li><a href="bootstrap.html">bootstrap</a></li>
+                <li><a href="responsividade.html">responsividade</a></li>
+                <li><a href="localstorage.html">local storage</a></li>
+                <li><a href="animacao.html">animação</a></li>
+                <li><a class="marcador">formulários</a></li>
+            </ul>
+        </nav>
+        <div id="conteudo">
+            <section>
+                <h1>Formulários</h1>
+
+                <article>
+                        <h2>Submit form - GET/POST</h2>
+                        <form action="" id="f1" method="GET" class="w-50 mx-auto shadow-lg p-3 mb-5 mt-5 border-0 bg-white rounded">
+                            <fieldset>
+                                <legend>Cadastre-se</legend>
+                                <ul>
+                                    <li>
+                                        <label>Nome:</label>
+                                        <input class="form-control" type="text" autofocus name="nome" required maxlength="60"/>
+                                    </li>
+                                    <li>
+                                        <label>Email:</label>
+                                        <input class="form-control" type="email" required name="email" />
+                                        <input type="hidden" name="cliente" value="Basic" />
+                                    </li>
+                                    <li class="form-group custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" name="ofertas" value="1" id="of" />
+                                        <label class="custom-control-label" id="oferta" for="of">Aceito receber SMS com ofertas</label>
+                                    </li>
+                                    <li>
+                                        <span>Escolha um assunto</span>
+                                        <select class="form-control" name="assunto">
+                                            <option>...</option>
+                                            <option value="Viagens">Viagens</option>
+                                            <option value="Esporte">Esporte</option>
+                                            <option value="Tecnologia">Tecnologia</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <span>Qual sua áreas de Interesse?</span>
+                                        <div class="form-group custom-control custom-radio">
+                                            <input class=" form-control custom-control-input" id="finan" type="radio" name="interesse" value="financeiro">
+                                            <label for="finan" class="custom-control-label">Financeiro</label>
+                                        </div> 
+                                        <div class="form-group custom-control custom-radio">
+                                            <input class=" form-control custom-control-input" id="saude" type="radio" name="interesse" value="saude">
+                                            <label for="saude" class="custom-control-label">Saúde</label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <span>Deixe seu Comentário</span>
+                                        <textarea rows="5" class="w-75 form-control"></textarea>
+                                    </li>                                   
+                                    <li>
+                                        <button type="button" id="btConfirma" class="btn btn-info">Confirmar</button>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                </article>        
+            </section>
+        </div>        
+            <footer class="container-fluid">
+                <p>&copy; 2024 - Todos os direitos reservados</p>
+            </footer>
+            <!-- Modal Inicio -->
+            <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+    </body>
+    <script src="../js/controle02.js"type="text/javascript"></script>
+
+    <!-- <script>
+        // alert('Bora Apreder!');
+        // confirm('Vamos até lá?');
+        // console.log(typeof('quarta-feira'));
+        // titulo.textContent='Desenvolvendo JS';
+        titulo.style.color='blue';
+        titulo.style.cursor='pointer'; 
+        // foto1.classList.add('hide')
+        console.log(foto1)
+    </script> -->
+</html>
